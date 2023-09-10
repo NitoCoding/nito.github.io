@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 2rem;
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav{
+    justify-content:space-between;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.nav-links > li > a:hover {
+    text-decoration: underline;
+    /* text-decoration-color: black; */
+    text-underline-offset: 1rem;
+    color: grey;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.bone {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height : auto;
+    margin-bottom: 3rem;
+}
+
+
+.socials{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.socials > a{
+    display:inline-flex;
+    font-size: 1.5rem;
+}
+
+.profile-intro{
+    padding-top: 2rem;
+}
+
+.profile-image {
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic{
+    border-radius: 2rem;
+    width : 400px;
+    height : 300px;
+}
+
+.page {
+    /* display: block; */
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.page > .page-title{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page > .page-intro{
+    color: gray;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+}
+
+
+.about-desc{
+    font-size: 1.2rem;
+    /* overflow: visible; */
+    
+}
+
+.about-pic{
+    border-radius: 2rem;
+    width: 300px;
+    height: 400px;
+}
+
+.tech-content{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+.tech{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    /* Mengembalikan urutan tampilan elemen seperti semula saat lebar layar mencapai 768px atau lebih besar */
+    .profile {
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+
